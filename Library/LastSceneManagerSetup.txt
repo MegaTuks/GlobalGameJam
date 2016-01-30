@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/WashingTeeth.unity
+- path: Assets/Scenes/BathroomPush.unity
   isLoaded: 1
   isActive: 1

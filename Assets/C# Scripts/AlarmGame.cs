@@ -60,7 +60,7 @@ public class AlarmGame : MonoBehaviour
 			moveHand = true;
 		} else if (randomHits <= 0 && !moveHand) {
 			handVector = new Vector3 
-				(alarmClock.transform.position.x,alarmClock.transform.position.y);
+				(alarmClock.transform.position.x * 1.4f,alarmClock.transform.position.y * 1.5f);
 			moveHand = true;
 			victoryBool = true;
 			Debug.Log("Ganaste!!! pinche luis verga!");
