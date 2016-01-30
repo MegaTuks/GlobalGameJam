@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MiniGame1.unity
+- path: Assets/Scenes/WashingTeeth.unity
   isLoaded: 1
   isActive: 1
