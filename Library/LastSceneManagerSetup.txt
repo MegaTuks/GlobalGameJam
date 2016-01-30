@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FirstScene.unity
+- path: Assets/Scenes/MiniGame1.unity
   isLoaded: 1
   isActive: 1
