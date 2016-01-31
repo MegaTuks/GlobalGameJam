@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -11,6 +12,7 @@ public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     private Vector3 start;
     public GameObject bar;
     public GameObject cup;
+    public GameObject bar2;
     private int timeshiftIni;
     public int timeshift;
     public int cupSpeed;
@@ -23,7 +25,7 @@ public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if (playerTime.playTime > 0)
         {
-            transform.Rotate(new Vector3(0, 0, 45));
+           // transform.Rotate(new Vector3(0, 0, 45));
             start = transform.position;
             dragged = true;
         }
@@ -42,7 +44,7 @@ public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         if (playerTime.playTime > 0)
         {
             transform.position = start;
-            transform.Rotate(new Vector3(0, 0, -45));
+           // transform.Rotate(new Vector3(0, 0, -45));
             dragged = false;
         }
     }
@@ -55,6 +57,11 @@ public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         timeshiftIni = timeshift;
     }
 
+	public void ChangeScene() {
+		SceneManager.LoadScene("TestRoom");	
+	}
+
+
     // Update is called once per frame
     void Update()
     {
@@ -65,7 +72,11 @@ public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
                 if ((Mathf.Abs(this.transform.position.x - this.GetComponent<RectTransform>().rect.width / 2 -
                     cup.transform.position.x)) <= cup.GetComponent<RectTransform>().rect.width / 2)
                 {
-                    bar.GetComponent<Image>().fillAmount += 0.003f;
+                		if(bar.GetComponent<Image>().fillAmount < .99) {
+	                    	bar.GetComponent<Image>().fillAmount += 0.004f;
+	                    } else {
+	                    	bar2.GetComponent<Image>().fillAmount+=.004f;
+	                    }
                 }
             }
             cup.transform.Translate(cupSpeed, 0, 0);
@@ -78,18 +89,20 @@ public class CoffePot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         }
         else
         {
-            if (bar.GetComponent<Image>().fillAmount < 0.9f && bar.GetComponent<Image>().fillAmount > 0.7f)
+            if (bar.GetComponent<Image>().fillAmount < 0.99f && bar.GetComponent<Image>().fillAmount > 0.7f)
             {
                 winBanner.SetActive(true);
+
             }
-            else if (bar.GetComponent<Image>().fillAmount > 0.9f)
+            else if (bar2.GetComponent<Image>().fillAmount > 0.04f)
             {
-                defeatBanner2.SetActive(true);
+                defeatBanner2.SetActive (true);
             }
             else
             {
-                defeatBanner.SetActive(true);
+                defeatBanner.SetActive (true);
             }
+			Invoke("ChangeScene",2);
         }
     }
 }

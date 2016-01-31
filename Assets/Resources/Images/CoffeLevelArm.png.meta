@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 1a8ceec8cad70984a98ef0f7ab7506c8
+timeCreated: 1454218891
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CoffeLevelArm_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CoffeLevelArm_0
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 200
+        width: 533
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 118.5, y: -254}
+        - {x: 149.5, y: -208}
+        - {x: 161.5, y: -187}
+        - {x: 178.5, y: -142}
+        - {x: 175.5, y: -102}
+        - {x: 164.5, y: -87}
+        - {x: 155.5, y: -81}
+        - {x: 32.5, y: -10}
+        - {x: 11.5, y: 1}
+        - {x: 7.5, y: 2}
+        - {x: 9.5, y: 2}
+        - {x: 10.5, y: 1}
+        - {x: 12.5, y: 1}
+        - {x: 13.5, y: 0}
+        - {x: 32.5, y: -6}
+        - {x: 51.5, y: -19}
+        - {x: 63.5, y: -25}
+        - {x: 89.5, y: -22}
+        - {x: 112.5, y: -15}
+        - {x: 125.5, y: -5}
+        - {x: 124.5, y: 0}
+        - {x: 117.5, y: 26}
+        - {x: 127.5, y: 108}
+        - {x: 213.5, y: 253}
+        - {x: 226.5, y: 278}
+        - {x: 226.5, y: 287}
+        - {x: 213.5, y: 307}
+        - {x: 196.5, y: 325}
+        - {x: 179.5, y: 330}
+        - {x: 155.5, y: 330}
+        - {x: 129.5, y: 322}
+        - {x: 76.5, y: 273}
+        - {x: 13.5, y: 131}
+        - {x: -10.5, y: 110}
+        - {x: -37.5, y: 84}
+        - {x: -63.5, y: 77}
+        - {x: -68.5, y: 72}
+        - {x: -82.5, y: 52}
+        - {x: -101.5, y: 50}
+        - {x: -124.5, y: 41}
+        - {x: -182.5, y: -7}
+        - {x: -212.5, y: -65}
+        - {x: -218.5, y: -92}
+        - {x: -217.5, y: -114}
+        - {x: -212.5, y: -124}
+        - {x: -224.5, y: -162}
+        - {x: -226.5, y: -171}
+        - {x: -224.5, y: -176}
+        - {x: -172.5, y: -171}
+        - {x: -67.5, y: -297}
+        - {x: -47.5, y: -324}
+        - {x: -35.5, y: -336}
+        - {x: -27.5, y: -341}
+        - {x: -0.5, y: -341}
+        - {x: 15.5, y: -336}
+        - {x: 43.5, y: -322}
+        - {x: 89.5, y: -287}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
