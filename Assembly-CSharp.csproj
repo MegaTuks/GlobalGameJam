@@ -54,7 +54,6 @@
      <Compile Include="Assets\C# Scripts\CupMover.cs" />
      <Compile Include="Assets\C# Scripts\PlayerTime.cs" />
      <Compile Include="Assets\C# Scripts\PointZone.cs" />
-     <Compile Include="Assets\C# Scripts\PoopingGame.cs" />
      <Compile Include="Assets\C# Scripts\TriggerEvent.cs" />
      <Compile Include="Assets\C# Scripts\WCTime.cs" />
      <Compile Include="Assets\C# Scripts\WakeUp.cs" />
