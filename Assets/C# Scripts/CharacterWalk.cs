@@ -15,6 +15,33 @@ public class CharacterWalk : MonoBehaviour
     void Update()
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        transform.position += move * speed * Time.deltaTime;
+        transform.position += move * speed;
+    }
+
+    void OnCollisionStay2D(Collision2D coll)
+    {
+        Debug.Log(coll.gameObject.tag);
+        Vector3 move;
+        switch (coll.gameObject.tag)
+        {
+            case "Down-Left":
+                move = new Vector3(1, 1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            case "Down-Right":
+                move = new Vector3(-1, 1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            case "Up-Left":
+                move = new Vector3(1, -1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            case "Up-Right":
+                move = new Vector3(-1, -1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            default:
+                break;
+        }
     }
 }
