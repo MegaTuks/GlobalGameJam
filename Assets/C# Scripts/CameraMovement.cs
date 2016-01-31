@@ -19,7 +19,7 @@ public class CameraMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = FindObjectOfType<CharacterWalk> ();
-		Camera.main.aspect = 16f / 9f;
+		//Camera.main.aspect = 16f / 9f;
 		firstZ = transform.position.z;
 		closeupZ = 2*firstZ / 3;
 		isFollowing = true;
