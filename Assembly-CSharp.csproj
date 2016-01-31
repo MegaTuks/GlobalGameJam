@@ -52,6 +52,7 @@
      <Compile Include="Assets\C# Scripts\CharacterWalk.cs" />
      <Compile Include="Assets\C# Scripts\CoffePot.cs" />
      <Compile Include="Assets\C# Scripts\CupMover.cs" />
+     <Compile Include="Assets\C# Scripts\EnterIcon.cs" />
      <Compile Include="Assets\C# Scripts\PlayerTime.cs" />
      <Compile Include="Assets\C# Scripts\PointZone.cs" />
      <Compile Include="Assets\C# Scripts\TriggerEvent.cs" />
