@@ -29,6 +29,7 @@ public class CharacterWalk : MonoBehaviour
 
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
+
 		anim.SetFloat ("Speed", Mathf.Abs(move.x) + Mathf.Abs(move.y));
 
 		if (move.x > 0)
@@ -36,6 +37,36 @@ public class CharacterWalk : MonoBehaviour
 		if (move.x < 0)
 			transform.localScale = new Vector2 (-Mathf.Abs(xScale), transform.localScale.y);
 
-        transform.position += move * speed * Time.deltaTime;
+
+
+        transform.position += move * speed;
+    }
+
+    void OnCollisionStay2D(Collision2D coll)
+    {
+        Debug.Log(coll.gameObject.tag);
+        Vector3 move;
+        switch (coll.gameObject.tag)
+        {
+            case "Down-Left":
+                move = new Vector3(1, 1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            case "Down-Right":
+                move = new Vector3(-1, 1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            case "Up-Left":
+                move = new Vector3(1, -1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            case "Up-Right":
+                move = new Vector3(-1, -1, 0);
+                transform.position += move * speed * 1.2f;
+                break;
+            default:
+                break;
+        }
+
     }
 }

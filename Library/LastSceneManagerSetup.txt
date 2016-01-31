@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/TestRoom - Copy.unity
+=======
+- path: Assets/Scenes/BathroomPush.unity
+>>>>>>> 5bcd51959d8b2efb5feb7d9d170cccf86524dba0
   isLoaded: 1
   isActive: 1
